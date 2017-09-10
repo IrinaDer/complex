@@ -1,0 +1,71 @@
+include ./pulse
+.content
+    +page-header('КОММЕРЧЕСКАЯ НЕДВИЖИМОСТЬ', 'Главная','Коммерческая недвижимость')
+    .commercial
+        .gallery-section
+            .gallery__carousel
+                each val in [1, 2, 3, 4, 5, 1, 2, 3, 4, 5 ]
+                    .gallery__item
+                        .gallery__item-container
+                            a(href="./assets/img/photo-report-"+val+"@2x.png" data-fancybox="images" ).gallery__fancy
+                                img(src="./assets/img/photo-report-"+val+"@2x.png")
+        .plan-block
+            p.plan-block__title ПЛАНИРОВСКА КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ
+            p.plan-block__desc Выберите сектор для более детального просмотра
+            .plan-block__cnt
+                .plan-block__img-box
+                    img.plan-block__img._svg(src="assets/img/comerce/comerce--str-tolbuhina--h-5.svg")
+                .plan-block__img-box
+                    img.plan-block__img._svg(src="assets/img/comerce/comerce--tower--str-tolbuhina--h-5.svg")
+
+    +page-footer()
+    +pulse('documentation-pulse')
+
+    .comerce-house-data(data-svg-id ="comerce--str-tolbuhina--h-5")
+        .section-data(data-section-svg-id="comerce--tower--str-tolbuhina--h-5" data-section-number="1")
+        .section-data(data-section-svg-id="comerce--tower--str-tolbuhina--h-5" data-section-number="2")
+        .section-data(data-section-svg-id="comerce--tower--str-tolbuhina--h-5" data-section-number="3")
+        .section-data(data-section-svg-id="comerce--tower--str-tolbuhina--h-5" data-section-number="4")
+
+
+    //section rooms status
+    -
+        var rooms = [{id: 'tower--str-tolbuhina--h-5--r-2', status: 'free', statusText: 'СВОБОДНО', enterprise: 'ООО"Костюм"', square: '47x26'},
+                    {id: 'tower--str-tolbuhina--h-5--r-1', status: 'sold', statusText: 'ПРОДАНО', square: '47x26'},
+                    {id: 'str-tolbuhina--h-5--r-1', status: 'free', statusText: 'СВОБОДНО', square: '47x26'},
+                    {id: 'str-tolbuhina--h-5--r-2', status: 'for-rent', statusText: 'СДАЁТСЯ В АРЕНДУ', square: '47x26'},
+                    {id: 'str-tolbuhina--h-5--r-3', status: 'sold', statusText: 'ПРОДАНО', square: '47x26'},
+                    {id: 'str-tolbuhina--h-5--r-4', status: 'for-rent', statusText: 'СДАЁТСЯ В АРЕНДУ', square: '47x26'},
+                    {id: 'str-tolbuhina--h-5--r-5', status: 'free', statusText: 'СВОБОДНО', square: '47x26'},
+                    {id: 'str-tolbuhina--h-5--r-6', status: 'sold', statusText: 'ПРОДАНО', square: '47x26'},
+                    {id: 'str-tolbuhina--h-5--r-7', status: 'sold', statusText: 'ПРОДАНО 7', square: '47x26'},
+                    {id: 'str-tolbuhina--h-5--r-8', status: 'for-rent', statusText: 'СДАЁТСЯ В АРЕНДУ 8', square: '47x26'}
+        ];
+
+    each room in rooms
+        if room.enterprise
+            .comerce-room-data(data-svg-room-id=room.id,
+                               data-comerce-room-status=room.status,
+                               data-comerce-room-status-text=room.statusText,
+                               data-comerce-room-enterprise=room.enterprise,
+                               data-comerce-room-square=room.square)
+        else
+            .comerce-room-data(data-svg-room-id=room.id,
+                                data-comerce-room-status=room.status,
+                                data-comerce-room-status-text=room.statusText,
+                                data-comerce-room-square=room.square)
+
+
+    #comerce-modal.comerce-modal
+        button(data-fancybox-close).comerce-close
+            img(src="./assets/img/btn-close.svg")._svg
+        .comerce-modal__body
+            .comerce-modal__top-line
+                p.comerce-modal__sector-name
+                    | Сектор
+                    span
+                p.comerce-modal__phone
+                    | Подробности можно узнать по телефону:
+                    span.comerce-modal__phone-val  8 (351) 210-00-06
+        .comerce-modal__img-box
+

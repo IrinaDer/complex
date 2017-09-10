@@ -1,0 +1,60 @@
+include ./pulse
+.content
+    +page-header('ВЫБЕРИТЕ ДОМ', 'Главная','Виберите дом')
+    .flats  
+        .flats__title-name Выберите дом в котором Вы хотели бы посмотреть квартиру.
+        .flats__content
+            .flats__title-content
+                .flats__title-item.flats__title-item_type_first(data-type='created-saling')
+                    .flats__title-color
+                    .flats__title-text Сдан и продаётся
+                .flats__title-item.flats__title-item_type_second(data-type='building-saling')
+                    .flats__title-color
+                    .flats__title-text Строиться и продаётся
+                .flats__title-item.flats__title-item_type_third(data-type='building')
+                    .flats__title-color
+                    .flats__title-text Строиться
+                .flats__title-item.flats__title-item_type_fours(data-type='builded-sales')
+                    .flats__title-color
+                        i.fa.fa-check(aria-hidden='true')
+                    .flats__title-text Построен и продан
+            .flats__body
+                img.houses-img(src="./assets/img/rc-yaroslavsky.svg")._svg
+                .house(data-street="Толбухина" data-id="rc-yaroslavsky--str-tolbuhina--h-nan6" data-corps="б" data-number="1" data-status="created-saling").house_type_created-saling
+                    .house_inner
+                        .house_text
+                        img(src="./assets/img/appendiks.svg")._svg
+                .house(data-street="Толбухина" data-id="rc-yaroslavsky--str-tolbuhina--h-nan5" data-corps="б" data-number="2" data-status="building-saling").house_type_building-saling
+                    .house_inner
+                        .house_text
+                        img(src="./assets/img/appendiks.svg")._svg
+                .house(data-street="Толбухина" data-id="rc-yaroslavsky--str-tolbuhina--h-nan4" data-corps="б" data-number="3" data-status="building").house_type_building
+                    .house_inner
+                        .house_text
+                        img(src="./assets/img/appendiks.svg")._svg
+                .house(data-street="Толбухина" data-id="rc-yaroslavsky--str-tolbuhina--h-nan3" data-corps="б" data-number="4" data-status="created-saling").house_type_builded-sales
+                    .house_inner
+                        .house_text
+                        img(src="./assets/img/appendiks.svg")._svg
+                .house(data-street="Толбухина" data-id="rc-yaroslavsky--str-tolbuhina--h-nan1" data-corps="б" data-number="5" data-status="builded-sales").house_type_builded-sales
+                    .house_inner
+                        .house_text
+                        img(src="./assets/img/appendiks.svg")._svg
+                .house(data-street="Толбухина" data-id="rc-yaroslavsky--str-tolbuhina--h-nan2" data-corps="б" data-number="6" data-status="builded-sales").house_type_builded-sales
+                    .house_inner
+                        .house_text
+                        img(src="./assets/img/appendiks.svg")._svg
+                .house(data-street="Толбухина" data-id="rc-yaroslavsky--str-tolbuhina--h-7" data-corps="б" data-number="7" data-status="builded-sales").house_type_builded-sales
+                    .house_inner
+                        .house_text
+                        img(src="./assets/img/appendiks.svg")._svg
+                .house(data-street="Толбухина" data-id="rc-yaroslavsky--str-tolbuhina--h-2" data-corps="б" data-number="8" data-status="builded-sales").house_type_builded-sales
+                    .house_inner
+                        .house_text
+                        img(src="./assets/img/appendiks.svg")._svg
+                .house(data-street="Толбухина" data-id="rc-yaroslavsky--str-tolbuhina--h-5" data-corps="б" data-number="9" data-status="builded-sales").house_type_builded-sales
+                    .house_inner
+                        .house_text
+                        img(src="./assets/img/appendiks.svg")._svg
+    +page-footer()
+    +pulse('documentation-pulse')

@@ -1,0 +1,39 @@
+include ./pulse
+.content
+    +page-header('Галлерея', 'Главная', 'Галлерея')
+    .gallery
+        .gallery__section
+            .gallery__title ФОТО ОТЧЁТ
+            .gallery__carousel
+                each val in [1, 2, 3, 4, 5, 1, 2, 3, 4, 5 ]
+                    .gallery__item
+                        .gallery__item-container
+                            .gallery__count 8
+                            .gallery__item-images
+                                .gallery__item-image
+                                    a(href="./assets/img/photo-report-"+val+"@2x.png" data-fancybox="images-preview"+val).gallery__fancy  
+                                        img(src="./assets/img/photo-report-"+val+"@2x.png")
+                                .gallery__item-modal-img(style="display:none")
+                                     a(href="./assets/img/photo-report-"+val+"@2x.png" data-fancybox="images-preview"+val).gallery__fancy  
+                                     a(href="./assets/img/photo-report-"+val+"@2x.png" data-fancybox="images-preview"+val).gallery__fancy  
+                                     a(href="./assets/img/photo-report-"+val+"@2x.png" data-fancybox="images-preview"+val).gallery__fancy
+                                     a(href="./assets/img/photo-report-"+val+"@2x.png" data-fancybox="images-preview"+val).gallery__fancy  
+
+                            .gallery__info Толбухина , 2 Центральная секция, монолитная секция декабрь 2015г.
+        .gallery__section
+            .gallery__title ФОТО
+            .gallery__carousel
+                each val in [1, 2, 3, 4, 5, 1, 2, 3, 4, 5 ]
+                    .gallery__item
+                        .gallery__item-container
+                            a(href="./assets/img/photo-report-"+val+"@2x.png" data-fancybox="images" ).gallery__fancy
+                                img(src="./assets/img/photo-report-"+val+"@2x.png")
+        .gallery__section
+            .gallery__title Видео
+                .gallery__video
+                    each val in [1, 2, 3, 4, 5, 6, 7, 8 ]
+                        .gallery__video-item
+                            a(data-fancybox href="https://www.youtube.com/watch?v=Dlh-dzB2U4Y;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0").gallery__own
+                                img(src="https://img.youtube.com/vi/Dlh-dzB2U4Y/0.jpg")
+    +page-footer()  
+    +pulse('documentation-pulse')

@@ -1,0 +1,43 @@
+.flat-house__title-name {
+    color: #795548;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.flat-house__title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #795548;
+    font-size: 16px;
+}
+
+.flats__title-text {
+    color: #424242;
+    font-size: 13px;
+}
+
+.flats__body .flat__prev .flat__prev-img-box {
+    background-color: #fff;
+}
+
+.flats__body .flat__prev-txt {
+    color: #fff;
+}
+
+.flats__body .flat__prev .flat__prev-img-box ._svg * {
+    fill: #95989A;
+}
+
+.flats__body {
+    position: relative;
+}
+
+.flats__body .flat__prev {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+._sidebar-top-btn-wrap .st0 {
+    fill: #bcaaa4;
+}

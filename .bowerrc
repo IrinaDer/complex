@@ -1,0 +1,6 @@
+{
+  "directory": "common/libs",
+  "timeout": 60000,
+  "color": true,
+  "interactive": true
+}

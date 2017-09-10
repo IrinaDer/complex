@@ -1,0 +1,40 @@
+mixin menu(txt, link, ico, active)
+    -txt = txt?txt:'menu item';
+    -link = link?link:'#';
+    -ico = ico?ico:'./assets/img/icon-home.svg';
+    -active = active?'_m-active-item':'';
+
+    li._-menu-w-item(class=active)
+        a._-menu-w-item-t(href="" + link + "")
+            ._-menu-w-item-t-c._-menu-w-item-t-c-txt
+                span=txt
+            ._-menu-w-item-t-c._-menu-w-item-t-c-ico(title=txt)
+                img(src=ico)._svg
+mixin page-header(title, breadcrumbFirst, breadcrumbSecond)
+    .page-header
+        .page-header__title
+            .page-header__name=title
+            a(href="tel:8 (351) 210-00-06").page-header__contact
+                .page-header__contact-icon
+                    i.fa.fa-phone(aria-hidden='true')
+                .page-header__contact-text 8 (351) 210-00-06
+        .page-header__breadcrumb
+            a(href="#").page-header__breadcrumb-icon=breadcrumbFirst
+            .page-header__breadcrumb-dot
+            a(href="#").page-header__breadcrumb-icon.breadcrumb-active=breadcrumbSecond
+mixin page-footer()
+    .page-footer © Все права защищены, CК «НИКС», 2017
+mixin logging-item(type, img, event, info, time, date)
+    tr.logging-icon(class=type)
+        td
+            .logging-event
+                .logging-img
+                    img(src=img)._svg
+                .event #{event} 
+        td  
+            .logging-info #{info}
+        td 
+            .logging-calendar
+                span.logging-time #{time}
+                span.logging-date #{date}
+

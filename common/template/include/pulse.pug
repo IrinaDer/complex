@@ -1,0 +1,18 @@
+mixin pulse(position)
+    .pulse(class=position)
+        .pulse__inner
+            .pulse__wrap.pulse__wrap_number_one
+                .pulse__wrap.pulse__wrap_number_two
+            .pulse__icon
+                i.fa.fa-phone(aria-hidden='true')
+    form.pulse__form
+        .pulse__form-cnt
+            .pulse__form-wt
+                p.pulse__form-wt-title  Перезвоним в рабочее время
+                p.pulse__form-wt-value В буднии дни с 9:00 до 18:00
+            .pulse__inp-block
+                input.pulse__inp.input(type="text", placeholder="Номер телефона")
+                button.pulse__submit.button(type='submit') Отправить
+            .pulse__close
+                img(src="./assets/img/btn-close.svg")._svg
+

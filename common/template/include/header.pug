@@ -1,0 +1,51 @@
+._sidebar._js-sidebar._js-css-sidebar-close
+    ._sidebar-top
+        ._sidebar-top-open
+            ._sidebar-top-btn-wrap
+                img(src="./assets/img/menu.svg")._btn-menu-ico._svg._js-menu
+        ._sidebar-top-close
+            ._sidebar-top-btn-wrap
+                img(src="./assets/img/close-btn.svg")._btn-menu-ico._svg._js-menu
+    ._sidebar-head
+        ._sidebar-head-logo._add-line
+            ._sidebar-head-logo-small
+                ._-logo-small-t
+                    ._-logo-small-t-c
+                        a(href='./')._logo-small-href
+                            img(src="./assets/img/yaroslavski-small@2x.png")._logo-small
+                        a(href='./')._logo-big-href
+                            img(src="./assets/img/logo@2x.png")._logo-big
+
+    ._sidebar-menu._add-line
+        ul._sidebar-menu-w
+            +menu('Главная','main.html','./assets/img/icon-home.svg',true)
+            +menu('О комплексе','about.html','./assets/img/icon-info.svg',false)
+            +menu('Квартиры','flats.html','./assets/img/icon-appartaments.svg',false)
+            +menu('Коммерческая недвижимость','commercial.html','./assets/img/icon-commerc.svg',false)
+            +menu('Акции и условия покупки','promotions.html','./assets/img/icon-sale.svg',false)
+            +menu('Галерея','gallery.html','./assets/img/icon-gallery.svg',false)
+            +menu('Документация','documentation.html','./assets/img/icon-documents.svg',false)
+            +menu('Контакты','contact.html','./assets/img/icon-map.svg',false)
+
+    ._sidebar-info
+        ._sidebar-info-box
+            ._sidebar-info-box-w
+                a(href="tel:+73512100006")._-info-box-phone 8(351) 210-00-06
+                span._-info-box-txt Челябинск, ул.Монакова, 4
+                span._-info-box-txt Время работы отдела продаж:<br>Будние дни с 9:00 до 18:00
+        ._sidebar-info-soc
+            ._sidebar-info-soc-t
+                ._sidebar-info-soc-t-c
+                    a(href="#" target="_blank")
+                        img(src="./assets/img/vk.svg")._svg._social-l
+                ._sidebar-info-soc-t-c
+                    a(href="#" target="_blank")
+                        img(src="./assets/img/facebook.svg")._svg._social-l
+                ._sidebar-info-soc-t-c
+                    a(href="#" target="_blank")
+                        img(src="./assets/img/youtube.svg")._svg._social-l
+    ._sidebar-send
+        a(data-fancybox data-src="#write-modal" href="javascript:;")._send-btn
+            span._send-btn-w-ico
+                img(src="./assets/img/icon.svg")._svg
+            span._send-btn-w-txt Напишите нам

@@ -1,0 +1,87 @@
+include ./pulse
+.content
+    +page-header('О комплексе', 'Главная','Партнёры')
+    .about
+        .about__text ЖК «Ярославский» - это архитектура принципиально иного уровня. Комплекс построен по европейским стандартам и отвечает требованиям бытового комфорта. Вход в каждое здание выполнен в виде высокой витражной группы из стекла. За ней - просторный холл, ведущий в огороженный двор с детскими и спортивными площадками и парком с ландшафтным дизайном.
+        .about__text ЖК «Ярославский» - это архитектура принципиально иного уровня. Комплекс построен по европейским стандартам и отвечает требованиям бытового комфорта. Вход в каждое здание выполнен в виде высокой витражной группы из стекла. За ней - просторный холл, ведущий в огороженный двор с детскими и спортивными площадками и парком с ландшафтным дизайном.
+        .about__items
+            .about__item
+                .about__item-image
+                    img(src="./assets/img/icon-credit-card.svg")._svg
+                .about__item-text
+                    .about__item-title Удобный для Вас способ оплаты
+                    .about__item-content Наличный расчёт, Ипотека, Беспроцентная рассрочка                     
+            .about__item
+                .about__item-image
+                    img(src="./assets/img/icon-parad.svg")._svg
+                .about__item-text
+                    .about__item-title Парадные вместо подъездов
+                    .about__item-content Лифтовой холл с консъержем и двумя входными группами, во двори вовнешню сторону комплекса
+            .about__item
+                .about__item-image
+                    img(src="./assets/img/icon-park.svg")._svg
+                .about__item-text
+                    .about__item-title Собственный парк
+                    .about__item-content Двор в ЖК "Ярославский" является парком со спортивнымии игровыми площадками только для жителей комплекса
+            .about__item
+                .about__item-image
+                    img(src="./assets/img/icon-shop-gallery.svg")._svg
+                .about__item-text
+                    .about__item-title Торговая галерея
+                    .about__item-content Магазины, аптеки, банки, кафе в шаговой доступности
+        .location-block
+            .location-block__title РАСПОЛОЖЕНИЕ ЖК "ЯРОСЛАВСКИЙ"
+            .location-block__content
+                .location-block__routes
+                    .location-block__routes_inner
+                        .location-block__route-title Путь до площади Революции:
+                        .location-block__route(data-start="[55.76, 37.64]" data-end="[55.90, 37.90]").active-route
+                            .location-block__route-info
+                                span.location-block__route-number=val
+                                span.location-block__route-name  Начало пути
+                            .location-block__route-duration 0.09км 
+                        .location-block__route(data-start="[55.76, 37.64]" data-end="[55.90, 37.90]")
+                            .location-block__route-info
+                                span.location-block__route-number=val
+                                span.location-block__route-name  Начало пути
+                            .location-block__route-duration 0.09км
+                        .location-block__route(data-start="[55.76, 37.64]" data-end="[55.50, 37.50]")
+                            .location-block__route-info
+                                span.location-block__route-number=val
+                                span.location-block__route-name  Начало пути
+                            .location-block__route-duration 0.09км
+                        .location-block__route(data-start="[55.76, 37.64]" data-end="[55.50, 37.50]")
+                            .location-block__route-info
+                                span.location-block__route-number=val
+                                span.location-block__route-name  Начало пути
+                            .location-block__route-duration 0.09км
+                        .location-block__route(data-start="[55.76, 37.64]" data-end="[55.50, 37.50]")
+                            .location-block__route-info
+                                span.location-block__route-number=val
+                                span.location-block__route-name  Начало пути
+                            .location-block__route-duration 0.09км
+                        .location-block__route(data-start="[55.76, 37.64]" data-end="[55.90, 37.90]").active-route
+                            .location-block__route-info
+                                span.location-block__route-number=val
+                                span.location-block__route-name  Начало пути
+                            .location-block__route-duration 0.09км 
+                        .location-block__route(data-start="[55.76, 37.64]" data-end="[55.90, 37.90]")
+                            .location-block__route-info
+                                span.location-block__route-number=val
+                                span.location-block__route-name  Начало пути
+                            .location-block__route-duration 0.09км
+                        .location-block__route(data-start="[55.76, 37.64]" data-end="[55.50, 37.50]")
+                            .location-block__route-info
+                                span.location-block__route-number=val
+                                span.location-block__route-name  Начало пути
+                            .location-block__route-duration 0.09км
+                        .location-block__route(data-start="[55.76, 37.64]" data-end="[55.50, 37.50]")
+                            .location-block__route-info
+                                span.location-block__route-number=val
+                                span.location-block__route-name  Начало пути
+                            .location-block__route-duration 0.09км
+                .location-block__map
+                    #about-map.about-map
+
+    +page-footer()
+    +pulse('documentation-pulse')

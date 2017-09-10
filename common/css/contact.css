@@ -1,0 +1,231 @@
+.contact__write-us {
+    display: flex;
+    margin: 59px 0px 95px;
+}
+.manager {
+    flex: 1 1 22%;
+    min-width: 350px;
+    margin-right: 70px;
+    padding: 50px 30px 35px;
+}
+.manager__photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 30px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.manager__name, .manager__position, .manager__description{
+    text-align: center;
+    color: #795548;
+}
+
+.manager__name {
+    margin-bottom: 15px;
+    font-size: 25px;
+    /*font-family: Bitter;*/
+}
+.manager__position {
+    margin: 0 auto 11px;
+    font-size: 16px;
+    max-width: 70%;
+    font-weight: 600;
+    line-height: 1.4;
+
+}
+
+.manager__description {
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.message {
+    flex: 1 1 80%;
+}
+.message__cnt {
+    height: 414px;
+    padding: 30px;
+}
+.message__response {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.message__response-text {
+    color: #6D4C41;
+    font-size: 18px;
+}
+.message__response-title {
+    margin-bottom: 15px;
+    color: #6D4C41;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.message__title {
+    margin-bottom: 33px;
+    color: #6D4C41;
+    text-transform: uppercase;
+    /*font-family: Bitter;*/
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.message__group {
+    margin-bottom: 25px;
+}
+.message__group_2 {
+    float: left;
+    width: 50%;
+}
+
+.message__group_2:first-child {
+    padding-right: 15px;
+    width: 50%;
+}
+.message__group_2:last-child {
+    padding-left: 15px;
+    width: 50%;
+}
+
+
+
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+.map__lbl {
+    display: none;
+    position: relative;
+    width: 423px;
+    padding: 10px 30px;
+    z-index: 999;
+    box-shadow: none !important;
+}
+#map .map__lbl {
+    display: block;
+}
+
+.map__logo {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.map__logo-img {
+    max-width: 100%;
+}
+.map__worktime {
+    margin-bottom: 18px;
+    color: #795548;
+    font-size: 12px;
+}
+.contact__map {
+    margin-bottom: 35px;
+}
+.map__contact {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.map__contact-data {
+    font-size: 11px;
+    color: #795548;
+    font-weight: 600;
+}
+
+.ymaps-b-balloon__content-holster {
+    padding: 0 !important;
+}
+.ymaps-b-balloon__close {
+    z-index: 999;
+}
+
+.ymaps-b-balloon__content {
+    border-radius: 0 !important;
+    border-width: 0 !important;
+}
+.ymaps-b-balloon__sprite {
+    background: white !important;
+}
+.ymaps-b-balloon__sprite_type_tail {
+    width: 0 !important;
+    height: 0 !important;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid white;
+    background: transparent !important;
+}
+
+@media (max-width: 767px) {
+    .ymaps-b-balloon, .ymaps-b-balloon__content > ymaps {
+        min-width: 150px !important;
+    }
+}
+
+
+.contact__contacts-info {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+    .manager {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 1053px) {
+    .contact__write-us {
+        display: block;
+    }
+    .manager {
+        margin: 0px 0px 30px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .contact__write-us {
+        margin-bottom: 50px;
+    }
+    .manager, .message__cnt {
+        min-width: 100%;
+        padding: 20px 15px;
+    }
+    .message__group_2:first-child,  .message__group_2:last-child{
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+    .message__title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .message__group {
+        margin-bottom: 10px;
+    }
+    .map__lbl {
+        width: auto;
+        padding: 10px;
+    }
+    .map__contact {
+        display: block;
+    }
+    .map__contact-data {
+        display: block;
+        text-align: center;
+    }
+    .contact__contacts-info {
+        margin-bottom: 40px;
+    }
+    #map {
+        height: 300px;
+    }
+
+}

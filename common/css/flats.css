@@ -1,0 +1,192 @@
+.flats {
+    margin-top: 40px;
+}
+
+.flats__title-name {
+    color: #795548;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.flats__title-content {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flats__title-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.flats__title-color {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.flats__title-color i {
+    font-size: 10px;
+}
+
+.flats__title-item_type_first .flats__title-color {
+    background-color: #9CCC65;
+}
+
+.flats__title-item_type_second .flats__title-color {
+    background-color: #FFAB40;
+}
+
+.flats__title-item_type_third .flats__title-color {
+    background-color: #BDBDBD;
+}
+
+.flats__title-item_type_fours .flats__title-color {
+    background-color: #ffffff;
+}
+
+.flats__title-item_type_fours .flats__title-color i {
+    color: #9CCC65;
+}
+
+.bg-image-lc {
+    width: 100%;
+}
+
+.flats__content {
+    box-shadow: 0px 3px 8px -1px rgba(108, 108, 108, 0.75);
+}
+
+.flats__body {
+    overflow-x: auto;
+}
+
+.flats__body>._svg {
+    width: 100%;
+    min-width: 1000px;
+    position: relative;
+}
+
+.created-saling:hover, .created-saling.active {
+    fill: #9CCC65 !important;
+    opacity: .3 !important;
+    transition: 0.3s;
+}
+
+.building-saling:hover, .building-saling.active {
+    fill: #FFAB40 !important;
+    opacity: .3 !important;
+    transition: 0.3s;
+}
+
+.building:hover, .building.active {
+    fill: #2B2929 !important;
+    opacity: .3 !important;
+    transition: 0.3s;
+}
+
+.builded-sales:hover, .builded-sales.active {
+    fill: #fff !important;
+    opacity: .3 !important;
+    transition: 0.3s;
+}
+
+.houses {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.houses-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.house {
+    position: absolute;
+    width: 190px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.house_type_created-saling {
+    background-color: #9CCC65;
+}
+
+.house_type_created-saling ._svg * {
+    fill: #9CCC65;
+    opacity: 1 !important;
+}
+
+.house_type_building-saling {
+    background-color: #FFAB40;
+}
+
+.house_type_building-saling ._svg * {
+    fill: #FFAB40;
+    opacity: 1 !important;
+}
+
+.house_type_building {
+    background-color: #BDBDBD;
+}
+
+.house_type_building ._svg * {
+    fill: #BDBDBD;
+    opacity: 1 !important;
+}
+
+.house_type_builded-sales {
+    color: #9CCC65;
+}
+
+.house_type_builded-sales ._svg * {
+    fill: #fff;
+    opacity: 1 !important;
+}
+
+.house_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.house_inner ._svg {
+    width: 27px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+
+.house:first-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#houses--rc-yaroslavsky>.cls-1 {
+    cursor: pointer;
+}

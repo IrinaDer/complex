@@ -1,0 +1,23 @@
+.write-modal(id="write-modal")
+    button(data-fancybox-close).message-close
+        img(src="./assets/img/btn-close.svg")._svg
+    form.message-modal
+        .message-title Напишите нам
+        input.message-input.message-input_type_text(type="text" placeholder="Ваше имя" required)
+        input.message-input.message-input_type_text(type="email" placeholder="Ваш e-mail")
+        input.message-input.message-input_type_text(type="tel" placeholder="Ваш номер телефона" required)
+        textarea.message-input.message-input_type_textarea(placeholder="Ваше сообщение..." required)
+        button.message-button Отправить
+#reserve-modal.reserve-modal
+    button(data-fancybox-close).reserve-close
+        img(src="./assets/img/btn-close.svg")._svg
+    form.reserve-cnt
+        .reserve-title ЗАБРОНИРОВАТЬ
+        input.reserve-input.reserve-input_type_text(type="text" placeholder="Ваше имя" required)
+        input.reserve-input.reserve-input_type_text(type="email" placeholder="Ваш e-mail")
+        input.reserve-input.reserve-input_type_text(type="tel" placeholder="Ваш номер телефона" required)
+        textarea.reserve-input.reserve-input_type_textarea(placeholder="Ваше сообщение..." required)
+            | Бронь на квартиру №119 в доме №5 по
+            | улице Тольбухина
+        button.reserve-button Отправить
+

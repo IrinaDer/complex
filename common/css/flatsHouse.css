@@ -1,0 +1,89 @@
+.flats__body-inner {
+    position: relative;
+    min-width: 1000px;
+}
+
+
+.house-img {
+    width: 100%;
+    min-width: 1000px;
+}
+
+
+.house-img g[id *= 'floors'] {
+    cursor: pointer;
+}
+.floor-hide {
+    transition: .4s ease-in-out;
+    fill: transparent !important;
+}
+
+
+.floor-label {
+    display: inline-block;
+    position: absolute;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    opacity: 1;
+    transition: .4s ease-in-out;
+    z-index: 1;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, .2);
+}
+.label-hide {
+    opacity: 0;
+    z-index: -100;
+}
+
+
+
+.house-label {
+    display: inline-block;
+    position: absolute;
+    padding: 10px 25px;
+    background: #BDBDBD;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    /*box-shadow: 0px 2px 7px rgba(0, 0, 0, .3);*/
+}
+.house-label:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 27px;
+    height: 10px;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    background: url("../img/appendiks-grey.svg") center center no-repeat;
+
+}
+.house-label__txt {
+    padding-right: 10px;
+}
+
+.house-label__ico {
+    font-size: 20px !important;
+}
+
+@media (max-width: 1400px) {
+    .floor-label, .house-label {
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+    .house-label__ico {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .floor-label, .house-label {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+    .house-label__ico {
+        font-size: 14px !important;
+    }
+}

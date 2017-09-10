@@ -1,0 +1,39 @@
+
+extends ./html
+block html-box
+    body
+        ._wraph
+            if(video==true)
+                .fullscreen-bg
+                    video(id="mainVideo" loop muted autoplay poster="./assets/img/Video.png").fullscreen-bg__video
+                        source(src="./assets/img/yrs.video.mp4" type="video/mp4")
+            if (listPage)
+                include ../include/listPage
+            if (header)
+                include ../include/header
+            if (flatFloor)
+                include ../include/flat-floor
+            if (flats)
+                include ../include/flats
+            if (about)
+                include ../include/about    
+            if (gallery)
+                include ../include/gallery    
+            if (promotions)
+                include ../include/promotions
+            if (documentation)
+                include ../include/documentation
+            if(rightside)
+                include ../include/rightside
+            if(infoblock)
+                include ../include/infoblock
+            if (contact)
+                include ../include/contact
+            if (commercial)
+                include ../include/commercial
+            if (flat)
+                include ../include/flat
+            if (flatHouse)
+                include ../include/flatHouse
+            block layout-box
+            include ../include/footer

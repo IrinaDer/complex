@@ -1,0 +1,260 @@
+body {
+    color: #424242;
+    font-family: "Lato", SansSerif;
+    font-weight: normal;
+    font-style: normal;
+    background: #F7F2F0;
+    min-width: 320px;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+img._svg {
+    opacity: 0;
+}
+
+._hidden-modals {
+    display: none;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.content {
+    padding-left: 170px;
+    padding-right: 70px;
+    padding-top: 70px;
+    padding-bottom: 130px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.page-header__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.page-header__contact {
+    text-decoration: none;
+}
+
+.page-header__contact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(161, 136, 127, 0.3);
+    margin-right: 20px;
+}
+
+.page-header__contact {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__contact-icon i {
+    font-size: 30px;
+    color: #A1887F;
+}
+
+.page-header__contact-text {
+    font-size: 18px;
+    color: #A1887F;
+}
+
+.page-header__name {
+    text-transform: uppercase;
+    color: #6D4C41;
+    font-size: 28px;
+    font-weight: bold;
+    font-weight: "Bitter"
+}
+
+.page-header__breadcrumb {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__breadcrumb-icon {
+    color: #A1887F;
+    font-size: 14px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.breadcrumb-active {
+    color: #6D4C41;
+    margin-right: 0;
+    letter-spacing: 1px;
+}
+
+.page-header__breadcrumb-dot {
+    margin-right: 15px;
+    width: 3px;
+    height: 3px;
+    background-color: #D7CCC8;
+    transform: rotate(-45deg);
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 170px;
+    right: 70px;
+    padding: 32px 0;
+    border-top: 1px solid #D7CCC8;
+    font-size: 18px;
+    color: #A1887F;
+}
+
+.input {
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 15px;
+    font-size: 18px;
+    width: 100%;
+    background: #F5F5F5;
+    border: 0px;
+}
+
+.input::placeholder {
+    color: #9E9E9E;
+    font-size: 18px;
+}
+
+.textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 15px;
+    font-size: 18px;
+    background: #F5F5F5;
+    border: 0px;
+    height: 139px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.block {
+    background: white;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.write-modal, .reserve-modal {
+    display: none;
+    padding: 50px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.write-modal .fancybox-close-small, .reserve-modal  .fancybox-close-small{
+    display: none;
+}
+
+.message-close, .reserve-close {
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+}
+
+.message-modal , .reserve-cnt{
+    text-align: center;
+}
+
+.message-close ._svg, .reserve-close ._svg {
+    width: 20px;
+    height: 18px;
+}
+
+.message-close ._svg *, .reserve-close ._svg * {
+    fill: #795548;
+}
+
+._send-btn-w-ico ._svg * {
+    fill: #9E9E9E;
+}
+
+.message-title, .reserve-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #6D4C41;
+}
+
+.message-input, .reserve-input {
+    display: block;
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: #F5F5F5;
+    height: 50px;
+    padding: 0 16px;
+    margin-bottom: 25px;
+}
+
+.message-input_type_textarea, .reserve-input_type_textarea {
+    padding-top: 12px;
+    height: 150px;
+    resize: none;
+    line-height: 1.6;
+}
+
+.message-input::placeholder, .reserve-input::placeholder {
+    font-size: 18px;
+    color: #9E9E9E;
+}
+
+.message-button, .reserve-button {
+    height: 50px;
+    width: 141px;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: semibold;
+    color: #ffffff;
+    background: #9CCC65;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.message-button:hover, .reserve-button:hover  {
+    background: #FFD180;
+    transition: 0.3s;
+}
+

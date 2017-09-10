@@ -1,0 +1,45 @@
+include ./pulse
+.content
+    +page-header('Документация', 'Главная','Документация')
+    .document
+        .document__tabs
+            a(data-href="#documents").document__tab.document__tab-active Документы
+            a(data-href="#loging").document__tab Логирование изменений
+        .document__tabs-contanier
+            .document__tab-container.active-tab-container(id="documents")
+                .documents-container
+                    -var doc = 1;
+                    while doc < 13
+                        .col-lg-2.col-md-4.col-sm-6
+                            .document-item(id=doc++)
+                                .document-img
+                                    a(href="./assets/img/document.jpg" data-fancybox="images").document-link
+                                        img(src="./assets/img/document-img-small.png")
+                                .document-name Документ
+            .document__tab-container(id="loging")
+                .logging-container
+                    .logging-table-container
+                        table.logging-table
+                            tr 
+                                th Событие
+                                th Информация
+                                th Дата события
+                            +logging-item('logging-new', './assets/img/icon-documents.svg', 'Создание раздела', 'Создан раздел "СПРАВКА"', '13:40', '02.07.2017')
+                            +logging-item('logging-delete', './assets/img/icon-documents.svg', 'Удаление раздела', 'Удалён раздел "КОНТАКТЫ"', '13:40', '02.07.2017')
+                            +logging-item('logging-change', './assets/img/icon-documents.svg', 'Изменение раздела', 'Изменён раздел "АКЦИИ И УСЛОВИЯ ПОКУПКИ"', '13:40', '02.07.2017')
+                            +logging-item('logging-new', './assets/img/icon-documents.svg', 'Создание раздела', 'Создан раздел справка', '13:40', '02.07.2017')
+                            +logging-item('logging-new', './assets/img/icon-documents.svg', 'Создание раздела', 'Создан раздел справка', '13:40', '02.07.2017')
+                            +logging-item('logging-new', './assets/img/icon-documents.svg', 'Создание раздела', 'Создан раздел справка', '13:40', '02.07.2017')
+                            +logging-item('logging-new', './assets/img/icon-documents.svg', 'Создание раздела', 'Создан раздел справка', '13:40', '02.07.2017')
+                            +logging-item('logging-new', './assets/img/icon-documents.svg', 'Создание раздела', 'Создан раздел справка', '13:40', '02.07.2017')
+                            +logging-item('logging-new', './assets/img/icon-documents.svg', 'Создание раздела', 'Создан раздел справка', '13:40', '02.07.2017')
+                            +logging-item('logging-new', './assets/img/icon-documents.svg', 'Создание раздела', 'Создан раздел справка', '13:40', '02.07.2017')
+                            +logging-item('logging-new', './assets/img/icon-documents.svg', 'Создание раздела', 'Создан раздел справка', '13:40', '02.07.2017')
+                    .logging-pagination
+                        a(href="").logging-pagination__item.logging-pagination__item-active 1
+                        a(href="").logging-pagination__item 2
+                        a(href="").logging-pagination__item 3
+                        
+
+    +page-footer()
+    +pulse('documentation-pulse')

@@ -1,0 +1,74 @@
+include ./pulse
+.content
+    +page-header('ВЫБЕРИТЕ КВАРТИРУ', 'Главная','Выберите квартиру')
+    .flat-floor
+        .flat-floor__title Этаж дома для удобства разбит на секторы. Для просмотра всего этажа воспользуйтесь навигацией.
+        .flat-choice
+            .flat-choice__floor
+                a.flat__prev(href="javascript:history.back()")
+                    span.flat__prev-img-box
+                        img.flat__prev-img._svg(src="assets/img/arrow-btn-back-to-home.svg")
+                    span.flat__prev-txt Вернуться к выбору этажа
+                .floor-slider__container
+                    .floor-slider.center
+                        - for (var i = 1; i < 18; i++)
+                            .floor-item(data-floorSVG="assets/img/floor/str-tolbuhina--h-7--f-"+ i +".svg")
+                                .floor-number=i
+                                .floor-text этаж
+
+            .flat-sector
+                .flat-sector__preloader
+                    img(src="./assets/img/preloader_search.gif")
+                .flat-sector__inner
+                    .flat-sector__title
+                        .flat-sector__address
+                            .flat-sector__street Ул.Толбухина
+                            .flat-sector__house-number
+                        .flat-sector__flat-number
+                            .flat-sector__name-title Квартира 
+                            .flat-sector__flat-number-text 
+                    .flat-sector__body
+                        .flat-sector__slider
+                        
+                    .flat-sector__map-min
+                        .flat-sector__map-min-svg
+                            img.flat-sector__map-min-svg-img._svg(src="./assets/img/str-tolbuhina--h-7--f-1.svg")
+                        .flat-sector__map-section
+                            span секция
+                            span.flat-sector__map-section-number 1
+            .flat-info
+                .flat-info__options
+                    .flat-info__option
+                        p Кол-во комнат:
+                        p.flat-info__rooms 
+                    .flat-info__option
+                        p Площадь:
+                        p.flat-info__square 
+                           
+                form.flat-info__form
+                    .flat-info__form-title Узнайте цены и наличие квартир
+                    .flat-info__form-message Отправьте заявку и мы перезвоним вам в течении 5 минут
+                    .flat-info__input-block
+                        input(type="text" placeholder="Ваше имя").flat-info__input
+                        input(type="text" placeholder="Ваш номер телефона").flat-info__input
+                        button(type="submit").flat-info__btn.button Отправить
+    +page-footer()
+    +pulse('documentation-pulse')
+
+
+    ///*********************
+    //квартири
+    div.flat-info(data-flatId="big--str-tolbuhina--h-7--f-1--r-1", data-room="3", data-square="48", data-number="1")
+    div.flat-info(data-flatId="big--str-tolbuhina--h-7--f-1--r-2", data-room="5", data-square="52", data-number="2")
+    div.flat-info(data-flatId="big--str-tolbuhina--h-7--f-1--r-3", data-room="4", data-square="78", data-number="3")
+    div.flat-info(data-flatId="big--str-tolbuhina--h-7--f-1--r-4", data-room="2", data-square="34", data-number="4")
+    div.flat-info(data-flatId="big--str-tolbuhina--h-7--f-1--r-5", data-room="1", data-square="56", data-number="5")
+
+    div.flat-info(data-flatId="big--str-tolbuhina--h-7--f-3--r-100", data-room="3", data-square="48", data-number="1")
+    div.flat-info(data-flatId="big--str-tolbuhina--h-7--f-3--r-99", data-room="5", data-square="52", data-number="2")
+    div.flat-info(data-flatId="big--str-tolbuhina--h-7--f-3--r-98", data-room="4", data-square="78", data-number="3")
+    div.flat-info(data-flatId="big--str-tolbuhina--h-7--f-3--r-97", data-room="2", data-square="34", data-number="4")
+    div.flat-info(data-flatId="big--str-tolbuhina--h-7--f-3--r-96", data-room="1", data-square="56", data-number="5")
+
+
+

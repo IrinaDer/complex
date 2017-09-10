@@ -1,0 +1,38 @@
+include ./pulse
+.content
+    +page-header('Контакты', 'Главная','Контакты')
+    .contact
+        .contact__write-us
+            .manager.block
+               .manager__photo(style={'background-image': 'url(assets/img/manager.jpg)'})
+               p.manager__name Иванова Ирина
+               p.manager__position Менеджер по роботе с клиентами
+               p.manager__description Мы с радостью ответим на ваши вопросы, пожелания и предложения, для этого заполните форму контактных данных
+            form#message-form.message.block
+               .message__cnt
+                   .message__title Напишите нам
+                   .message__line
+                       .message__group.message__group_2
+                           input.input(type="text", name="", placeholder="Ваше имя")
+                       .message__group.message__group_2
+                           input.input(type="text", name="", placeholder="Ваш e-mail")
+                   .message__line
+                       .message__group
+                           textarea.textarea(name="", placeholder="Ваше сообщение...")
+                   .message__line.text-center
+                       button.button(type="submit") Отправить
+        .contact__contacts-info
+            include ./contacts-info.pug
+        .contact__map
+            #map.map(data-coordX="55.76", data-coordY="37.64")
+            .map__lbl.block
+                .map__logo
+                    img.map__logo-img(src="assets/img/Logo-map.png", srcset="assets/img/Logo-map@2x.png 2x")
+                p.map__worktime Мы приглашаем Вас посетить наш офис с понедельника по пятницу с 9-00 до 18-00 по адресу ул.Монакова,4.
+                p.map__contact
+                    span.map__contact-data www.yaroslavskiy74.ru
+                    span.map__contact-data 74.niks@mail.ru
+                    span.map__contact-data тел: 210-00-06,210-00-07
+
+    +page-footer()
+    +pulse('documentation-pulse')

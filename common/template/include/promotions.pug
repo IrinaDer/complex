@@ -1,0 +1,77 @@
+include ./pulse
+.content
+    +page-header('АКЦИИ И УСЛОВИЯ ПОКУПКИ', 'Главная', 'Акции/Условия покупки')
+    .promotions
+        .promotion-block
+            .promotion
+                .promotion__cnt
+                    .promotion__image
+                        a(href="#")
+                            img(src="./assets/img/action-img-1@2x.png")
+                    .promotion__text
+                        .promotion__title
+                            a(href="#") Акция 1
+                        .promotion__info 100% отделка квартир всего за 20 000 рублей!!!
+        
+            .promotion
+                .promotion__cnt
+                    .promotion__image
+                        a(href="#")
+                            img(src="./assets/img/action-img-2@2x.png")
+                    .promotion__text
+                        .promotion__title
+                            a(href="#") Акция 2
+                        .promotion__info При 100% наличной оплате скидка 500 рублей с каждого квадратного метра!
+        
+            .promotion
+                .promotion__cnt
+                    .promotion__image
+                        a(href="#")
+                            img(src="./assets/img/action-img-3@2x.png")
+                    .promotion__text
+                        .promotion__title
+                            a(href="#") Акция 3
+                        .promotion__info В ЖК Ярославский на квартиры в жилом доме по ул.Ярославская,11-а (стр.)! С 01 апреля весь первый этаж всего 39 999 рублей за 1 кв. метр!!!!
+
+        .promotions__text
+            .promotions__text-title В жилом комплексе Вы можете приобрести квартиру
+                span любым удобным для вас способом:
+            .promotions__text-list
+                ul.promotions__text-item
+                    li.promotions__text-info За наличный и безналичный расчет
+                    li.promotions__text-info По беспроцентной рассрочке
+                    li.promotions__text-info Оформив ипотеку, в том числе с использование сертификата (материнский капитал, военный сертификат)
+        .bank__block
+            .bank__block-title Мы работаем со всеми крупными банками, которые известны своей надежностью и предлагают выгодные условия ипотечного кредитования. Наши клиенты получают ипотеку в банках:
+            .bank__block-body
+                .bank__block-item-container
+                    a(href="#").bank__block-item
+                        img(src="./assets/img/sberbank.png" srcset="./assets/img/sberbank@2x.png 2x")
+                .bank__block-item-container
+                    a(href="#").bank__block-item
+                        img(src="./assets/img/uralsib_logo.png" srcset="./assets/img/uralsib_logo@2x.png 2x")
+                .bank__block-item-container
+                    a(href="#").bank__block-item
+                        img(src="./assets/img/vtb24_logo.png" srcset="./assets/img/vtb24_logo@2x.png 2x")
+                .bank__block-item-container
+                    a(href="#").bank__block-item
+                        img(src="./assets/img/sberbank.png" srcset="./assets/img/sberbank@2x.png 2x")
+                .bank__block-item-container
+                    a(href="#").bank__block-item
+                        img(src="./assets/img/uralsib_logo.png" srcset="./assets/img/uralsib_logo@2x.png 2x")
+            .bank__block-more И другие
+        .flat__block
+            form.flat__block-form
+                .flat__block-title ВЫБРАТЬ КВАРТИРУ
+                .flat__block-body 
+                    input(type="text" placeholder="Стоимость квартиры").flat__block-input
+                    a(href="#").flat__block-btn Подобрать
+        .contacts-info
+            .contacts-info__title 
+                p Информация, представленная на сайте, не является публичной офертой. 
+                p Для получения информации о скидках и спец.предложениях обращайтесь к специалистам отдела продаж:
+            include ./contacts-info.pug
+                        
+
+    +page-footer()
+    +pulse('documentation-pulse')

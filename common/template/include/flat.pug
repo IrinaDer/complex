@@ -1,0 +1,45 @@
+include ./pulse
+.content
+    +page-header('КВАРТИРА №119 В ДОМЕ №5', 'Главная','КВАРТИРА №119 В ДОМЕ №5')
+    .flat
+        .flatData(data-section="str-tolbuhina--h-7--f-7" data-flat="str-tolbuhina--h-7--f-7--r-290")
+        p.flat__desc Квартира №119 в доме №5 находиться по улице Толбухина. 3-х комнатная квартира, раздельный санузел и ванная комната, просторная лоджия.
+        a.flat__prev(href="flat-floor.html?floor=7&flat=290")
+            span.flat__prev-img-box
+                img.flat__prev-img._svg(src="assets/img/arrow-btn-back-to-home.svg")
+            span.flat__prev-txt Вернуться к выбору квартиры
+        .flat__data
+            .flat__carousel.block
+                .flat__carousel-item
+                    img.flat__carousel-img(src="assets/img/appart-img-map.png" srcset="assets/img/appart-img-map@2x.png 2x" )
+                .flat__carousel-item
+                    img.flat__carousel-img(src="assets/img/appart-img-map.png" srcset="assets/img/appart-img-map@2x.png 2x" )
+                .flat__carousel-item
+                    img.flat__carousel-img(src="assets/img/appart-img-map.png" srcset="assets/img/appart-img-map@2x.png 2x" )
+            .flat__info
+                table.info-table
+                    tr.info-table__price
+                        td.info-table__price-name Цена:
+                        td.info-table__price-value 4 400 000 руб.
+                    tr.info-table__item
+                        td.info-table__name Кол-во комнат:
+                        td.info-table__value 3-х комнатная
+                    tr.info-table__item
+                        td.info-table__name Площадь:
+                        td.info-table__value 57 м
+                    tr.info-table__item
+                        td.info-table__name Этаж:
+                        td.info-table__value 13
+                    tr.info-table__item
+                        td.info-table__name Номер квартиры:
+                        td.info-table__value 159
+                .flat__info-btn-box
+                    button.button.button_big.flat__info-btn(type="button", data-fancybox, data-src="#reserve-modal", href="javascript:;") Забронировать
+        .flat__floor
+            p.flat__floor-title.title РАСПОЛОЖЕНИЕ НА ЭТАЖЕ
+            .flat__floor-img-box
+               
+
+    +page-footer()
+    +pulse('documentation-pulse')
+

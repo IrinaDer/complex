@@ -1,0 +1,38 @@
+{
+    "build": "public",
+    "src": {
+        "vendorJs": [
+            "./common/libs/jquery/dist/jquery.js",
+            "./common/libs/jQuery-One-Page-Nav/jquery.nav.js",
+            "./common/libs/slick-carousel/slick/slick.min.js",
+            "./common/libs/remodal/dist/remodal.min.js",
+            "./common/libs/wow/dist/wow.min.js",
+            "./common/libs/fancybox/dist/jquery.fancybox.js",
+            "./common/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"
+        ],
+        "vendorCss": [
+            "./common/libs/normalize-css/normalize.css",
+            "./common/libs/bootstrap/css/bootstrap.css",
+            "./common/libs/slick-carousel/slick/slick.css",
+            "./common/libs/remodal/dist/remodal.css",
+            "./common/libs/remodal/dist/remodal-default-theme.css",
+            "./common/libs/wow/css/libs/animate.css",
+            "./common/libs/fancybox/dist/jquery.fancybox.css",
+            "./common/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"
+        ],
+        "vendorCssRelated": [{
+                "dir": "./common/libs/fancybox/src/**",
+                "place": "/"
+            },
+            {
+                "dir": "./common/libs/malihu-custom-scrollbar-plugin/*.png",
+                "place": "/"
+            }
+        ],
+        "fonts": [
+            "Lato",
+            "Bitter",
+            "fontAwesome"
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+doctype html
+include ../include/mixin
+html#home
+    head
+        - var date = Math.round(new Date().getTime() / 1000);
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="icon" type="image/x-icon" href="./assets/img/favicon.ico?v="+ date +"")
+        block head-box
+        title= pageTitle || 'project title'
+        meta(name="Keywords" content="Ярославский")
+        meta(name="Description" content="ЖК «Ярославский» - это архитектура принципиально иного уровня. Комплекс построен по европейским стандартам и отвечает требованиям бытового комфорта.")
+        link(href="./assets/libs/css/vendor.min.css?v="+ date +"" type="text/css" rel="stylesheet")
+        link(href="./assets/css/main.min.css?v="+ date +"" type="text/css" rel="stylesheet")
+
+        link(href="./assets/fonts/Bitter/stylesheet.min.css?v=" + date + "" type="text/css" rel="stylesheet")
+        link(href="./assets/fonts/Lato/stylesheet.min.css?v=" + date + "" type="text/css" rel="stylesheet")
+        link(href="./assets/fonts/fontAwesome/stylesheet.min.css?v=" + date + "" type="text/css" rel="stylesheet")
+
+        meta(property="business:contact_data:locality" content="Челябинск")
+        meta(property="business:contact_data:country_name" content="Россия")
+        meta(property="business:contact_data:street_address" content="Монакова, 4")
+        meta(property="business:contact_data:postal_code" content="454091")
+        meta(property="business:contact_data:email" content="74.niks@mail.ru")
+        meta(property="business:contact_data:phone_number" content="8 (351) 210-00-06")
+        meta(property="business:contact_data:website" content="http://yaroslavskiy74.ru")
+        meta(property="og:type" content="article")
+        meta(property="og:title" content=pageTitle)
+        meta(property="og:description" content="ЖК «Ярославский» - это архитектура принципиально иного уровня. Комплекс построен по европейским стандартам и отвечает требованиям бытового комфорта.")
+        meta(property="og:url" content="http://yaroslavskiy74.ru")
+        meta(property="og:image" content=pageImg)
+        meta(property="image" content=pageImg)
+        script(src="https://www.google.com/recaptcha/api.js")
+        script(src="https://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU")
+        -video = video?true:false;
+
+    block html-box

@@ -1,0 +1,18 @@
+include ./pulse
+.rightside
+    .rightside__inner
+        section.rightside__section
+            p.rightside__title ПАРТНЁРЫ
+            .rightside__text-container
+                p.rightside__text.rightside__text_size_big ЖК «Смолинский»
+                p.rightside__text.rightside__text_size_big Квартал "02"
+                p.rightside__text.rightside__text_size_big Дом 5, по улице Толбухина
+        section.rightside__section
+            p.rightside__title АКЦИИ
+            each val in ['Акция 1','Акция 2', 'Акция 3' ]
+                .rightside__text-container.rightside__text-block
+                    .rightside__text-title
+                        .rightside__text.rightside__text_size_medium= val
+                        .rightside__text.rightside__text_size_medium 11.05.2017
+                    .rightside__text.rightside__text_size_small АКЦИЯ В ЖК Ярославский на квартиры в жилом доме по ул.Ярославская,11-а (стр.)! С 01 апреля весь первый этаж всего 39 999 рублей за 1 кв. метр!!!
+        +pulse('pulse_page_index')

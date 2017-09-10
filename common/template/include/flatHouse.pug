@@ -1,0 +1,40 @@
+include ./pulse
+.content
+    +page-header('ВЫБЕРИТЕ ЭТАЖ', 'Главная','Выберите этаж')
+    .flat-house
+        .flat-house__title  Выберите этаж дома на котором Вы бы хотели посмотреть квартиры
+        .flats__content
+            .flats__title-content
+                .flats__title-item.flats__title-item_type_first
+                    .flats__title-text Ул.Толбухинаб, дом 4
+            .flats__body
+                .flats__body-inner
+                    img(src="./assets/img/house/str-tolbuhina--h-7.svg")._svg.house-img
+
+                    .data-div(data-floor="1", data-link="flat-floor.html")
+                    .data-div(data-floor="2", data-link="flat-floor.html")
+                    .data-div(data-floor="3", data-link="flat-floor.html")
+                    .data-div(data-floor="4", data-link="flat-floor.html")
+                    .data-div(data-floor="5", data-link="flat-floor.html")
+                    .data-div(data-floor="6", data-link="flat-floor.html")
+                    .data-div(data-floor="7", data-link="flat-floor.html")
+                    .data-div(data-floor="8", data-link="flat-floor.html")
+                    .data-div(data-floor="9", data-link="flat-floor.html")
+                    .data-div(data-floor="10", data-link="flat-floor.html")
+                    .data-div(data-floor="11", data-link="flat-floor.html")
+                    .data-div(data-floor="12", data-link="flat-floor.html")
+                    .data-div(data-floor="13", data-link="flat-floor.html")
+                    .data-div(data-floor="14", data-link="flat-floor.html")
+                    .data-div(data-floor="15", data-link="flat-floor.html")
+                    .data-div(data-floor="16", data-link="flat-floor.html")
+                    .data-div(data-floor="17", data-link="flat-floor.html")
+
+                    a.flat__prev(href="")
+                        span.flat__prev-img-box
+                            img.flat__prev-img._svg(src="assets/img/arrow-btn-back-to-home.svg")
+                        span.flat__prev-txt Вернуться к выбору дома
+
+    +page-footer()
+    +pulse('documentation-pulse')
+
+    #data-house(data-house='Ул.Толбухинаб дом 5')

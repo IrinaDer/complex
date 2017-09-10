@@ -1,0 +1,328 @@
+.gallery-section {
+    margin: 76px 0;
+}
+.plan-block__title {
+    color: #6D4C41;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.plan-block__desc {
+    color: #795548;
+    font-size: 16px;
+}
+.plan-block__cnt {
+
+    margin: 100px 0;
+    text-align: center;
+}
+.plan-block__img-box {
+    position: relative;
+}
+.plan-block__img {
+    max-width: 100%;
+    max-height: 500px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.plan-block__img * {
+    transition: .3s ease-in-out;
+}
+.plan-block__img g[id *= 'rooms'] * {
+    fill: #fff;
+}
+.plan-block__img g[id *= 'sections'] * {
+    fill: #A1887F;
+
+}
+
+.plan-block__img g[id *= 'rooms'] [data-active ="active"] {
+    fill: #CDE5B2;
+}
+
+.plan-block__img g[id *= 'sections'] [data-active ="active"] {
+    fill: #9EAA72;
+}
+
+.plan-block__img g[id *= 'porch'] [data-active ="active"] {
+    fill: #A5BD8A;
+}
+
+
+.section-box {
+    display: flex;
+    position: absolute;
+    pointer-events: none;
+}
+.section-box__lbl {
+    margin: auto;
+    max-width: 60%;
+    padding: 7px 15px;
+    background: #9CCC65;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    animation: showLbl .4s ease-in-out forwards;
+
+}
+
+@keyframes showLbl {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.comerce-modal {
+    display: none;
+    padding: 50px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.comerce-close{
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+}
+.comerce-modal  .fancybox-close-small {
+    display: none;
+}
+
+.comerce-close ._svg{
+    width: 20px;
+    height: 18px;
+}
+
+
+.comerce-modal__top-line {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+.comerce-modal__sector-name {
+    flex: 1 1 25%;
+    color: #A1887F;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.comerce-modal__phone {
+    flex: 1 1 75%;
+    color: #A1887F;
+    font-size: 18px;
+    text-align: right;
+
+}
+.comerce-modal__phone-val {
+    font-weight: bold;
+}
+
+.comerce-modal__img-box {
+    position: relative;
+}
+
+.room-box {
+    position: absolute;
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+    transform: translate(0%, 0%);
+    /*border: 2px solid #663834;*/
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.room-box__lbl {
+    text-align: center;
+    max-width: 120px;
+}
+
+.room-box__square {
+    padding: 5px 0 0 0;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.room-box__enterprise {
+    margin-bottom: 3px;
+    margin-top: 3px;
+    font-size: 12px;
+    color: white;
+}
+
+.room-box__status {
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.4;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+.for-rent-status .room-box__enterprise,
+.for-rent-status .room-box__square,
+.for-rent-status .room-box__status{
+    color: #95989A;
+}
+
+.room-box__ico {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: auto;
+
+}
+
+.free-status .room-box__ico {
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+.room-box__ico-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 3px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .5);
+}
+
+.for-rent-status .room-box__ico-circle {
+    background: #95989A;
+}
+
+.room-box__ico-circle:before {
+    content: "";
+    display: inline-block;
+    min-height: inherit;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+.free {
+    fill: #9CCC65;
+}
+
+.sold {
+    fill: #FFD180;
+}
+
+.for-rent {
+    fill: #F5F5F5;
+}
+
+
+.free-status {
+    background: #9CCC65;
+}
+
+.sold-status {
+    background: #FFD180;
+}
+
+.for-rent-status {
+    background: #F5F5F5;
+}
+
+.plan-block__img image{
+    display: none;
+}
+
+
+@media (max-width: 1053px) {
+    .plan-block__img {
+        max-height: 250px;
+    }
+    .gallery-section {
+        margin: 50px 0;
+    }
+    .plan-block__cnt {
+        margin: 40px 0;
+    }
+    .section-box__lbl {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .plan-block__img {
+        max-height: 150px;
+    }
+    .plan-block__cnt {
+        margin: 20px 0;
+    }
+    .plan-block__title {
+        font-size: 20px;
+    }
+
+    .section-box__lbl {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .comerce-modal__top-line {
+        display: block;
+        margin: 20px 0 30px;
+    }
+
+    .comerce-modal__sector-name {
+        margin-bottom: 10px;
+        text-align: center;
+
+    }
+    .comerce-modal__phone {
+        text-align: center;
+
+    }
+    .room-box {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .room-box__status {
+        font-size: 10px;
+    }
+    .room-box__ico-circle {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 3px;
+    }
+    .room-box__ico {
+        width: 15px;
+    }
+    .free-status .room-box__ico {
+        width: 20px;
+    }
+    .section-box__lbl span {
+        display: none;
+    }
+
+    .room-box__enterprise {
+        display: none;
+    }
+    .room-box__square {
+        display: none;
+    }
+
+
+}
